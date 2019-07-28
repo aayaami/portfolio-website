@@ -8,7 +8,7 @@ const Portfolio = () => {
       <div className='container'>
         <div className='portfolio-content'>
           <div className='portfolio-item'>
-            <img className='image' src={chatapp} alt='' />
+            <img className='image' src={instagram} alt='' />
             <div className='links'>
               <a
                 className='btn-main'
@@ -46,7 +46,7 @@ const Portfolio = () => {
             </p>
           </div>
           <div className='portfolio-item'>
-            <img className='image' src={instagram} alt='' />
+            <img className='image' src={chatapp} alt='' />
             <div className='links'>
               <a
                 className='btn-main'
