@@ -247,3 +247,66 @@ a {
     }
   }
 }
+
+// Tablets & Smaller
+@media (max-width: 960px) {
+  #about {
+    height: 110vh;
+    .about-content {
+      position: relative;
+      top: -4rem;
+      grid-template-rows: 0.5 auto;
+    }
+  }
+  #navbar {
+    justify-content: space-around;
+    ul {
+      padding-right: 2rem;
+    }
+  }
+
+  #portfolio {
+    height: 100%;
+    .portfolio-content {
+      margin: 1rem auto;
+      grid-template-rows: 1fr;
+      .portfolio-item {
+        padding: 0.5rem;
+        grid-template-areas:
+          'image'
+          'info'
+          'links';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        .image {
+          grid-row: 1;
+          height: 100%;
+          width: auto;
+          justify-self: center;
+        }
+      }
+    }
+  }
+
+  #skills {
+    height: 100%;
+    .skills-content {
+      .skills-skillsset-wrap {
+        grid-template-rows: 1fr auto 20fr;
+        .skills-skillsset {
+          flex-direction: column;
+          .skills-item {
+            grid-template-areas: 'skills-skill skills-img';
+            grid-template-rows: 1fr;
+            grid-template-columns: 3fr 3fr;
+            justify-items: center;
+            align-items: center;
+            .skills-img {
+              height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
